@@ -1,0 +1,122 @@
+/* Custom CSS for Navbar */
+.nav-link.active {
+    font-size: 25px;
+}
+
+.navbar-brand {
+    color: blueviolet;
+}
+
+/* Custom CSS for Swiper initialization */
+html,
+body {
+    position: relative;
+    height: 100%;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    background: #eee;
+}
+
+/* Swiper Container */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+/* Swiper Slide */
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    height: 520px;
+    /* Set the desired height */
+}
+
+/* Swiper Slide Image */
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* Ensure the image takes up the full height of the swiper-slide */
+}
+
+/* sidebar code in this */
+
+body {
+  background-color: #fbfbfb;
+}
+@media (min-width: 991.98px) {
+  main {
+    padding-left: 240px;
+  }
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 58px 0 0; /* Height of navbar */
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+  width: 240px;
+  z-index: 600;
+}
+
+@media (max-width: 991.98px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+.sidebar .active {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.main-bar{
+  display:none;
+}
+
+@media (max-width : 1000px) {
+  .main-bar{
+    display:block;
+  }
+  .main-bar1{
+    display: none;
+  }
+}
+
+/* the new css for the sidebar */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.sticky-sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+/* Adjust the padding and margins as needed */
+.content-area {
+  padding: 20px;
+  margin-left: 250px; /* Width of your sidebar */
+}
+
+.navbar {
+  z-index: 1000; /* Ensure the navbar stays on top */
+}
